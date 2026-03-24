@@ -1,0 +1,23 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "maia2-gnn"
+version = "0.1.0"
+description = "GNN-based chess move prediction project derived from maia2."
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "chess==1.10.0",
+    "gdown==5.2.0",
+    "numpy==2.0.2",
+    "pandas==2.2.3",
+    "pyyaml>=6.0.2",
+    "torch==2.4.0",
+    "torch-geometric>=2.5.3",
+    "tqdm==4.65.0",
+]
+
+[tool.setuptools]
+packages = ["maia2_gnn"]
